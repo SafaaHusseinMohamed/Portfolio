@@ -24,7 +24,7 @@ function Projects() {
       src: portfolio,
       title: "Portfolio Website",
       desc:"A modern, responsive personal portfolio built with React and Tailwind CSS to showcase web development projects, technical skills, and clean UI components",
-      link: "#",
+      link: "https://safaahusseinmohamed.github.io/Portfolio/",
       sp1: "react",
       sp2: "tailwind",
       sp3: "javascript",
