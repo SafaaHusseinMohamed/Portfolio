@@ -2,7 +2,7 @@ import { useState } from "react";
 function Header() {
   const [isOpen, setIsOpen] = useState(false);
   return (
-    <div className="fixed top-0 left-0 w-full z-50 header-parent relative p-4 bg-gradient-to-r from-black to-black-300 shadow-blue-950/20 shadow-xl flex  justify-around items-center">
+    <div className="fixed top-0 left-0 w-full z-50 header-parent p-4 bg-gradient-to-r from-black to-black-300 shadow-blue-950/20 shadow-xl flex  justify-around items-center">
       <h3 className="text-[20px] font-['Arial_Black']">
         <span className="bg-gradient-to-r from-purple-500 to-cyan-400 bg-clip-text text-transparent font-bold m-1">
           Safaa
@@ -13,9 +13,7 @@ function Header() {
         <li className="hover:text-purple-400 cursor-pointer transition-colors">
           <a href="#home">home</a>
         </li>
-        {/* <li className="hover:text-purple-400 cursor-pointer transition-colors">
-          <a href="#about">about</a>
-        </li> */}
+
         <li className="hover:text-purple-400 cursor-pointer transition-colors">
           <a href="#Expertise">skills</a>
         </li>
