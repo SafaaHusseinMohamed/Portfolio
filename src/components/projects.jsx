@@ -3,7 +3,7 @@ import "../App.css";
 import fragrance from "../imgs/fragrance.png";
 import portfolio from "../imgs/portfolio.png";
 import gifts from "../imgs/gifts-store.png";
-import educode from "../imgs/tailwind--educode .png";
+import educode from "../imgs/tailwindeducode.png";
 import ecommerse from "../imgs/e-commerse.png";
 
 function Projects() {
