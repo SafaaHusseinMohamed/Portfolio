@@ -61,10 +61,23 @@ function Footer() {
         <div>
           <h2 className="my-6 ml-12 md:ml-48 capitalize">navigation</h2>
           <div className="flex flex-col ml-14 gap-2 text-gray-500 md:ml-50 ">
-            <p className="hover:text-gray-200 transition all">home</p>
-            <p className="hover:text-gray-200 transition all">skills</p>
-            <p className="hover:text-gray-200 transition all">project</p>
-            <p className="hover:text-gray-200 transition all">contact</p>
+            <a href="#home">
+              {" "}
+              <p className="hover:text-gray-200 transition all">home</p>
+            </a>
+
+            <a href="#Expertise">
+              {" "}
+              <p className="hover:text-gray-200 transition all">skills</p>
+            </a>
+            <a href="#projects">
+              {" "}
+              <p className="hover:text-gray-200 transition all">projects</p>
+            </a>
+            <a href="#contact">
+              {" "}
+              <p className="hover:text-gray-200 transition all">contact</p>
+            </a>
           </div>
         </div>
         <div>

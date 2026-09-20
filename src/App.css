@@ -1,23 +1,21 @@
-/* تعريف متغير زاوية التعبئة لعمل أنيميشن انسيابي */
+html {
+  scroll-behavior: smooth;
+}
 @property --angle {
   syntax: "<angle>";
   initial-value: 0deg;
   inherits: false;
 }
 
-/* تنسيقات خاصة بقسم المهارات */
 .expertise-section {
   padding: 40px 20px;
 }
-
-/* الحاوية الأساسية للدائرة */
 .expertise-wrap {
   position: relative;
   width: 130px;
   height: 130px;
 }
 
-/* الدائرة الخارجية وتطبيق أنيميشن التعبئة للخط الملون فقط */
 .expertise-ring {
   width: 100%;
   height: 100%;
@@ -26,44 +24,34 @@
   align-items: center;
   justify-content: center;
 
-  /* تبدأ من 0 درجة (فاضية مع خلفية داكنة) */
   --angle: 0deg;
 
-  /* أنيميشن ملء الخط الملون: يبدأ بعد ثانية واحدة (1s) ويستغرق 1.5 ثانية بأسلوب انسيابي */
   animation: fillProgress 1s cubic-bezier(0.4, 0, 0.2, 1) 0.5s forwards;
 }
 
-/* كاي فريم لتغيير الزاوية إلى 100% من قيمتها المتغيرة */
 @keyframes fillProgress {
   to {
     --angle: var(--target-angle);
   }
 }
 
-/* النسب والألوان الخاصة بكل مهارة (مع وضع زاوية النهاية واللون الخاص بها) */
-
-/* HTML5 - 95% (342deg) */
 .ring-95 {
   --target-angle: 342deg;
   background: conic-gradient(#f97316 var(--angle), #1f2937 var(--angle) 360deg);
   box-shadow: 0 0 20px rgba(249, 115, 22, 0.25);
 }
 
-/* CSS3 - 90% (324deg) */
 .ring-90 {
   --target-angle: 324deg;
   background: conic-gradient(#2563eb var(--angle), #1f2937 var(--angle) 360deg);
   box-shadow: 0 0 20px rgba(37, 99, 235, 0.25);
 }
 
-/* React.js - 88% (316deg) */
 .ring-88 {
   --target-angle: 316deg;
   background: conic-gradient(#06b6d4 var(--angle), #1f2937 var(--angle) 360deg);
   box-shadow: 0 0 20px rgba(6, 182, 212, 0.25);
 }
-
-/* JavaScript - 85% (306deg) */
 .ring-85-js {
   --target-angle: 306deg;
   background: conic-gradient(#eab308 var(--angle), #1f2937 var(--angle) 360deg);
@@ -72,21 +60,18 @@
 img {
   box-shadow: 0 0 400px rgba(37, 99, 235, 0.25);
 }
-/* Redux - 85% (306deg) */
 .ring-85-redux {
   --target-angle: 306deg;
   background: conic-gradient(#a855f7 var(--angle), #1f2937 var(--angle) 360deg);
   box-shadow: 0 0 20px rgba(168, 85, 247, 0.25);
 }
 
-/* Tailwind CSS - 90% (324deg) */
 .ring-90-tailwind {
   --target-angle: 324deg;
   background: conic-gradient(#38bdf8 var(--angle), #1f2937 var(--angle) 360deg);
   box-shadow: 0 0 20px rgba(56, 189, 248, 0.25);
 }
 
-/* الدائرة الداخلية لتغطية المركز */
 .expertise-inner {
   width: 106px;
   height: 106px;
@@ -101,7 +86,6 @@ img {
   box-shadow: 0 0 50px rgba(37, 99, 235, 0.25);
 }
 
-/* تنسيق الرقم داخل الدائرة */
 #portfolio {
   animation: portfolio 2s infinite;
   animation-timing-function: ease;
