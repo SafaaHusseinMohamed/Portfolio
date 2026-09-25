@@ -5,6 +5,7 @@ import portfolio from "../imgs/portfolio.png";
 import gifts from "../imgs/gifts-store.png";
 import educode from "../imgs/tailwindeducode.png";
 import ecommerse from "../imgs/e-commerse.png";
+import shoppingcart from "../imgs/shoppingcart.png"
 
 function Projects() {
   const Allprojects = [
@@ -12,7 +13,7 @@ function Projects() {
       id: 1,
       src: fragrance,
       title: "fragrance, perfume-brand",
-      desc: "An interactive e-commerce web application for a luxury perfume brand, featuring dynamic shopping cart functionality, item persistence using localStorage, and responsive product showcase",
+      desc: "An interactive e-commerce web application for a luxury perfume brand, featuring dynamic shopping cart functionality.",
       link: " https://safaahusseinmohamed.github.io/Fragrance-project-JS/",
       sp1: "html",
       sp2: "css",
@@ -22,7 +23,7 @@ function Projects() {
       id: 2,
       src: portfolio,
       title: "Portfolio Website",
-      desc: "A modern, responsive personal portfolio built with React and Tailwind CSS to showcase web development projects, technical skills, and clean UI components",
+      desc: "A modern, responsive personal portfolio built with React and Tailwind CSS to showcase web development projects, technical skills.",
       link: "https://safaahusseinmohamed.github.io/Portfolio/",
       sp1: "react",
       sp2: "tailwind",
@@ -58,6 +59,16 @@ function Projects() {
       sp2: "tailwind",
       sp3: "javascript",
     },
+     {
+      id: 6,
+      src: shoppingcart ,
+      title: "Luxury Perfume Store",
+      desc: "An interactive e-commerce web application designed for a luxury perfume brand. Features dynamic shopping cart management.",
+      link: "https://safaahusseinmohamed.github.io/Perfume-Store/",
+      sp1: "html",
+      sp2: "css",
+      sp3: "javascript",
+    },
   ];
 
   const webapp = [
@@ -65,6 +76,7 @@ function Projects() {
     Allprojects[2],
     Allprojects[3],
     Allprojects[4],
+    Allprojects[6],
   ];
   const myportfolio = [Allprojects[1]];
 
@@ -140,7 +152,7 @@ function Projects() {
 
 function Drawcarts({ product }) {
   return (
-    <div className="bg-[#0b1726] rounded-2xl overflow-hidden border border-gray-800 shadow-xl flex flex-col justify-between transition-all duration-300 hover:border-purple-500/40 hover:shadow-2xl hover:shadow-purple-900/20">
+    <div className="hover:-translate-y-2 trasition-all duration-500 bg-[#0b1726] rounded-2xl overflow-hidden border border-gray-800 shadow-xl flex flex-col justify-between transition-all duration-300 hover:border-purple-500/40 hover:shadow-2xl hover:shadow-purple-900/20">
       <div
         id="imgdiv"
         className="relative group overflow-hidden h-56 bg-gray-950 flex items-center justify-center p-2"

@@ -1,6 +1,8 @@
 import Header from "./components/Header";
 import Home from "./components/Home";
-import Expertise from "./components/Expertise";
+import Expertise from "./components/Expertise"
+import Services from "./components/services";
+import Tools from "./components/tools";
 import Projects from "./components/projects";
 import Contact from "./components/contact";
 import Footer from "./components/footer";
@@ -13,6 +15,8 @@ function App() {
       <Header />
       <Home />
       <Expertise />
+      <Services/>
+      <Tools/>
       <Projects />
       <Contact />
       <Footer />

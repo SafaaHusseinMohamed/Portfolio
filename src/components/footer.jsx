@@ -1,7 +1,7 @@
 import "../App.css";
 function Footer() {
   return (
-    <div className="pt-12 flex mb-12 flex-col items-start  ">
+    <div id="footer" className="pt-12 flex mb-12 flex-col items-start  ">
       <div id="update " className="md:flex md:mb-6 lg:justify-around ">
         <div className="pl-12 lg:ml-24">
           <h2 className="text-[30px] font-bold">stay update</h2>
@@ -11,9 +11,9 @@ function Footer() {
           <input
             type="email"
             placeholder="enter your email .."
-            className=" mt-6 bg-gray-700 p-4 w-[320px] h-[40px] rounded-xl lg:w-[400px] "
+            className=" mt-6 bg-gray-700 p-4 w-[320px] h-[40px] rounded-xl lg:w-[400px] hover:-translate-y-1 transition-all duration-300  "
           />
-          <button className="capitalize bg-blue-800/100 w-[120px] p-2 rounded-xl ml-2 hover:bg-blue-500/100">
+          <button className="hover:-translate-y-2 trasition-all duration-500 capitalize bg-blue-800/100 w-[120px] p-2 rounded-xl ml-2 hover:bg-blue-500/100">
             subscribe
           </button>
         </div>
@@ -31,30 +31,30 @@ function Footer() {
           <div className="flex gap-8 text-gray-500">
             <a
               href="https://www.linkedin.com/in/safaa-hussein-68350333b"
-              className="w-10 h-10 rounded-full border border-gray-700 flex items-center justify-center text-gray-400 hover:text-purple-400 hover:border-purple-400 transition-colors duration-300"
+              className="hover:-translate-y-2 trasition-all duration-500 w-10 h-10 rounded-full border border-gray-700 flex items-center justify-center text-gray-400 hover:text-purple-400 hover:border-purple-400 transition-colors"
             >
-              <i className="fa-brands fa-linkedin-in"></i>
+              <i className="trasition-all duration-500 fa-brands fa-linkedin-in"></i>
             </a>
 
             <a
               href="https://github.com/SafaaHusseinMohamed"
-              className="w-10 h-10 rounded-full border border-gray-700 flex items-center justify-center text-gray-400 hover:text-purple-400 hover:border-purple-400 transition-colors duration-300"
+              className=" hover:-translate-y-2 trasition-all duration-500 w-10 h-10 rounded-full border border-gray-700 flex items-center justify-center text-gray-400 hover:text-purple-400 hover:border-purple-400 transition-colors duration-300"
             >
-              <i className="fa-brands fa-github"></i>
+              <i className="trasition-all duration-500 fa-brands fa-github"></i>
             </a>
 
             <a
               href="https://mail.google.com/mail/?view=cm&fs=1&to=safaahusseinahmed597@gmail.com"
-              className="w-10 h-10 rounded-full border border-gray-700 flex items-center justify-center text-gray-400 hover:text-purple-400 hover:border-purple-400 transition-colors duration-300"
+              className="hover:-translate-y-2 trasition-all duration-500 trasition-all duration-500 w-10 h-10 rounded-full border border-gray-700 flex items-center justify-center text-gray-400 hover:text-purple-400 hover:border-purple-400 transition-colors duration-300"
             >
               <i className="fa-solid fa-envelope"></i>
             </a>
 
             <a
               href="https://www.facebook.com/safaa.hussein.168477/"
-              className="w-10 h-10 rounded-full border border-gray-700 flex items-center justify-center text-gray-400 hover:text-purple-400 hover:border-purple-400 transition-colors duration-300"
+              className="hover:-translate-y-2 trasition-all duration-500 w-10 h-10 rounded-full border border-gray-700 flex items-center justify-center text-gray-400 hover:text-purple-400 hover:border-purple-400 transition-colors duration-300"
             >
-              <i className="fa-brands fa-facebook"></i>
+              <i className="trasition-all duration-500 fa-brands fa-facebook"></i>
             </a>
           </div>
         </div>
@@ -69,6 +69,10 @@ function Footer() {
             <a href="#Expertise">
               {" "}
               <p className="hover:text-gray-200 transition all">skills</p>
+            </a>
+              <a href="#services">
+              {" "}
+              <p className="hover:text-gray-200 transition all">services</p>
             </a>
             <a href="#projects">
               {" "}
@@ -105,7 +109,7 @@ function Footer() {
       <div className="flex gap-2 m-auto text-gray-500 ">
         <i className="fa-regular fa-copyright mt-1.5 text-white"></i>
 
-        <p className="capitalize">
+        <p className="capitalize hover:text-gray-100">
           all rights reserved in sebtamber 2026{" "}
           <span
             id="portfolio"
@@ -114,7 +118,9 @@ function Footer() {
             portfolio
           </span>
         </p>
+        
       </div>
+<a className="text-gray-400  text-center mt-6 md:mt-[-24px] ml-48  md:ml-auto mr-12 hover:text-gray-500" href="#home">back to top <i className="fa-solid fa-arrow-up"></i></a>
     </div>
   );
 }

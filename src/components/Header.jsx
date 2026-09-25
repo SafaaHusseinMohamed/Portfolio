@@ -1,4 +1,5 @@
 import { useState } from "react";
+import "../App.css"
 function Header() {
   const [isOpen, setIsOpen] = useState(false);
   return (
@@ -17,6 +18,9 @@ function Header() {
         <li className="hover:text-purple-400 cursor-pointer transition-colors">
           <a href="#Expertise">skills</a>
         </li>
+           <li className="hover:text-purple-400 cursor-pointer transition-colors">
+          <a href="#services">services</a>
+        </li>
         <li className="hover:text-purple-400 cursor-pointer transition-colors">
           <a href="#projects">projects</a>
         </li>
@@ -27,33 +31,33 @@ function Header() {
       <div className="lg:flex gap-4 items-center hidden">
         <a
           href="https://www.linkedin.com/in/safaa-hussein-68350333b"
-          className="w-10 h-10 rounded-full border border-gray-700 flex items-center justify-center text-gray-400 hover:text-purple-400 hover:border-purple-400 transition-colors duration-300"
+          className="hover:-translate-y-1 trasition-all duration-500 w-10 h-10 rounded-full border border-gray-700 flex items-center justify-center text-gray-400 hover:text-purple-400 hover:border-purple-400 transition-colors duration-300"
         >
-          <i className="fa-brands fa-linkedin-in"></i>
+          <i className="fa-brands fa-linkedin-in trasition-all duration-500"></i>
         </a>
 
         <a
           href="https://github.com/SafaaHusseinMohamed"
-          className="w-10 h-10 rounded-full border border-gray-700 flex items-center justify-center text-gray-400 hover:text-purple-400 hover:border-purple-400 transition-colors duration-300"
+          className="hover:-translate-y-1 trasition-all duration-500 w-10 h-10 rounded-full border border-gray-700 flex items-center justify-center text-gray-400 hover:text-purple-400 hover:border-purple-400 transition-colors duration-300"
         >
-          <i className="fa-brands fa-github"></i>
+          <i className="fa-brands fa-github trasition-all duration-500"></i>
         </a>
 
         <a
           href="https://mail.google.com/mail/?view=cm&fs=1&to=safaahusseinahmed597@gmail.com"
-          className="w-10 h-10 rounded-full border border-gray-700 flex items-center justify-center text-gray-400 hover:text-purple-400 hover:border-purple-400 transition-colors duration-300"
+          className="hover:-translate-y-1 trasition-all duration-500 w-10 h-10 rounded-full border border-gray-700 flex items-center justify-center text-gray-400 hover:text-purple-400 hover:border-purple-400 transition-colors duration-300"
         >
-          <i className="fa-solid fa-envelope"></i>
+          <i className="fa-solid fa-envelope trasition-all duration-500"></i>
         </a>
 
         <a
           href="https://www.facebook.com/safaa.hussein.168477/"
-          className="w-10 h-10 rounded-full border border-gray-700 flex items-center justify-center text-gray-400 hover:text-purple-400 hover:border-purple-400 transition-colors duration-300"
+          className="hover:-translate-y-1 trasition-all duration-500 w-10 h-10 rounded-full border border-gray-700 flex items-center justify-center text-gray-400 hover:text-purple-400 hover:border-purple-400 transition-colors duration-300"
         >
-          <i className="fa-brands fa-facebook"></i>
+          <i className="fa-brands fa-facebook trasition-all duration-500"></i>
         </a>
         <a href="#contact" className=" transitin-all duration-1000">
-          <button className="rounded-2xl w-[135px]  bg-gradient-to-r from-purple-500 to-cyan-500 h-[38px] flex justify-center items-center p-2 hover:from-purple-700 to-cyan-700 ">
+          <button className="hover:-translate-y-1 trasition-all duration-500 rounded-2xl w-[135px]  bg-gradient-to-r from-purple-500 to-cyan-500 h-[38px] flex justify-center items-center p-2 hover:from-purple-700 to-cyan-700 ">
             Let's Contact
           </button>
         </a>
@@ -76,6 +80,9 @@ function Header() {
             </li>
             <li className="hover:text-purple-400 cursor-pointer transition-colors">
               <a href="#Expertise">skills</a>
+            </li>
+                 <li className="hover:text-purple-400 cursor-pointer transition-colors">
+              <a href="#services">services</a>
             </li>
             <li className="hover:text-purple-400 cursor-pointer transition-colors">
               <a href="#projects">projects</a>

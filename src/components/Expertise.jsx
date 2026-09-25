@@ -46,7 +46,7 @@ function Expertise() {
       </p>
 
       <div className="relative max-w-5xl mx-auto mt-12 px-12 flex items-center justify-center">
-        {/* سهم اليسار */}
+      
         <button
           onClick={handlePrev}
           disabled={page === 0}
@@ -58,8 +58,6 @@ function Expertise() {
         >
           &#10094;
         </button>
-
-        {/* عرض العناصر المقتطعة */}
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8 justify-items-center w-full min-h-[180px] items-center">
           {visibleSkills.map((skill, index) => (
             <div
@@ -76,12 +74,12 @@ function Expertise() {
               <h2 className="mt-4 text-white font-semibold capitalize">
                 {skill.name}
               </h2>
+             
             </div>
           ))}
         </div>
 
-        {/* سهم اليمين */}
-        <button
+          <button
           onClick={handleNext}
           disabled={(page + 1) * itemsPerPage >= skills.length}
           className={`absolute right-0 z-10 p-3  bg-gray-800/80 border-2 hover:border-purple-400  text-white  rounded-full  border-gray-700  transition-all ${
@@ -93,6 +91,7 @@ function Expertise() {
           &#10095;
         </button>
       </div>
+       <p className="m-auto mt-12 text-center text-gray-400"> scroll <i className="fa-solid fa-arrow-right"></i></p>
     </div>
   );
 }

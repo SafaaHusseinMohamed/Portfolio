@@ -22,7 +22,7 @@ function Contact() {
       >
         <div
           id="icons"
-          className="bg-blue-700/10 pl-6 pb-4 rounded-xl w-[420px] lg:w-[420px]  md:w-[810px] lg:pt-8 lg:rounded-3xl"
+          className="hover:-translate-y-2 trasition-all duration-500 bg-blue-700/10 pl-6 pb-4 rounded-xl w-[420px] lg:w-[420px]  md:w-[810px] lg:pt-8 lg:rounded-3xl"
         >
           <a href="#" className="text-[40px] text-gray-400 ">
             <i className="fa-solid fa-laptop-code bg-gradient-to-r from-purple-400/100 to-blue-400/100 bg-clip-text text-transparent"></i>
@@ -69,33 +69,33 @@ function Contact() {
             <input
               type="text"
               placeholder="First Name"
-              className="w-[180px] md:w-[250px] capitalize bg-gray-700/40 p-2 rounded-lg lg:w-[220px]"
+              className="hover:-translate-y-2 trasition-all duration-500 w-[180px] md:w-[250px] capitalize bg-gray-700/40 p-2 rounded-lg lg:w-[220px]"
             />
             <input
               type="text"
               placeholder="last Name"
-              className="w-[180px] md:w-[250px] capitalize bg-gray-700/40 p-2  rounded-lg lg:w-[220px]"
+              className="hover:-translate-y-2 trasition-all duration-500 w-[180px] md:w-[250px] capitalize bg-gray-700/40 p-2  rounded-lg lg:w-[220px]"
             />
           </div>
           <div className="mt-6 mb-6 flex justify-evenly">
             <input
               type="email"
               placeholder="email"
-              className="w-[180px] md:w-[250px] capitalize bg-gray-700/40 p-2 rounded-lg lg:w-[220px]"
+              className="hover:-translate-y-2 trasition-all duration-500 w-[180px] md:w-[250px] capitalize bg-gray-700/40 p-2 rounded-lg lg:w-[220px]"
             />
             <input
               type="text"
               placeholder="phone no (optional)"
-              className="w-[180px] md:w-[250px] capitalize bg-gray-700/40 p-2 rounded-lg lg:w-[220px]"
+              className="hover:-translate-y-2 trasition-all duration-500 w-[180px] md:w-[250px] capitalize bg-gray-700/40 p-2 rounded-lg lg:w-[220px]"
             />
           </div>
 
           <input
             type="text"
-            className=" capitalize bg-gray-700/30 h-[140px] rounded-xl w-[370px] md:w-[610px] ml-6 md:ml-25 mb-12 p-4 pb-[50px] lg:ml-5 lg:w-[460px]"
+            className="hover:-translate-y-2 trasition-all duration-500 capitalize bg-gray-700/30 h-[140px] rounded-xl w-[370px] md:w-[610px] ml-6 md:ml-25 mb-12 p-4 pb-[50px] lg:ml-5 lg:w-[460px]"
             placeholder="Your Message"
           />
-          <button className="capitalize  text-center  w-[370px] md:ml-25 md:w-[610px] bg-blue-800/100 h-[40px] rounded-lg ml-6 mb-12 hover:bg-blue-600/100 lg:ml-5 lg:w-[460px]">
+          <button className="hover:-translate-y-2 trasition-all duration-500 capitalize  text-center  w-[370px] md:ml-25 md:w-[610px] bg-blue-800/100 h-[40px] rounded-lg ml-6 mb-12 hover:bg-blue-600/100 lg:ml-5 lg:w-[460px]">
             send message
           </button>
         </div>
